@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <iomanip>
 
 double map(double value)
 {
@@ -37,6 +38,8 @@ int main()
 	
 	int N = list_num.size();
 	double sum = 0;
+	
+	file_output << std::scientific << std::setprecision(16); //imposto la notazione scientifica
 	
 	for (int i=0; i<N; i++)
 	{
